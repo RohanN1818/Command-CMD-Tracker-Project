@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Command Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Command Tracker</h1>
+
+    <!-- Add Section -->
+    <div class="form-section">
+        <h3>Add Command</h3>
+        <div class="form-group">
+            <input type="text" id="name" placeholder="Command name">
+            <input type="text" id="description" placeholder="Description">
+            <button onclick="addCommand()">Add</button>
+        </div>
+    </div>
+
+    <!-- Search Section -->
+    <div class="search-section">
+        <h3>All Commands</h3>
+        <input type="text" id="searchInput"
+               placeholder="Search command..."
+               onkeyup="filterCommands()">
+    </div>
+
+    <!-- Table Section -->
+    <div class="table-section">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Created At</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="commandTable">
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
