@@ -9,7 +9,7 @@ import com.rohan.commandtracker.model.Command;
 import com.rohan.commandtracker.service.Commandservice;
 
 @RestController
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://command-lines-rohan.netlify.app/")
 @RequestMapping("/commands")
 public class CommandController {
 
