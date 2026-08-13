@@ -1,5 +1,5 @@
 
-const API_URL = "http://localhost:8081/commands";
+const API_URL = "https://command-cmd-backend-project.onrender.com/commands";
 
 // Load commands when page loads
 window.onload = function () {
